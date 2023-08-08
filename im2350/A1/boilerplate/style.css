@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .row {
+    width:720px;
+    margin:10px auto 10px auto;
+  }
+  .image-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+  }
+  
+  <html>
+  <body>
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  @font-face {
+    font-family: 'Cinzel', serif;
+    src: url(https://fonts.googleapis.com/css2?family=Cinzel&display=swap);
+  }
+
+  body {
+    color: rgb(130, 122, 62);
+    background-color: #bfb3ca;
+    font-family: 'Cinzel', serif;
+  }
+  
+  nav {
+    margin: auto;
+    font-family:'Cinzel', serif;
+  }
+  
+  pre {
+    font-family: 'Cinzel', serif;
+  }
+  
+  div,
+  nav, section {
+    box-shadow: 5px 5px 15px #000000;
+  }
+  
+  
+  code {
+    display: block;
+    background-color:#0d0d15;
+    padding: 0.5rem;
+  }
+  
+  h1 {
+    max-width: fit-content;
+    font-size: 3rem;
+    margin: 25px auto;
+    margin-bottom: 50px;
+    font-family: 'Cinzel', serif;
+  }
+  
+  img {
+    float: left;
+  }
+  
+  ul, ol {
+    list-style-position: inside;
+    padding-top: 15px;
+    font-size: 1.25rem;
+  }
+  
+  
+/*Text style Information*/
+
+h1{
+  color: rgb(147, 139, 77);
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-style: oblique;
+  font-size: 50px;
+}
+
+
+h2{
+  color: rgb(130, 122, 62);
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-style: normal;
+  font-size: 38px;
+}
+
+h3{
+  color: rgb(130, 122, 62);
+  text-align: left;
+  font-family: 'Cinzel', serif;
+  font-style: normal;
+  font-size: 22px;
+}
+
+p{
+  color: rgb(67, 63, 33);
+  text-align: left;
+  font-family: 'Cinzel', serif;
+  font-style: normal;
+  font-size: 16px;
+}
+
+
+h1.ex1 {
+padding: 200px;
+}
+
+h2.ex1 {
+padding: 60px;
+}
+
+p.ex1 {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 150px;
+margin-left: 80px;
+}
+
+h2.ex2 {
+padding: 40px;
+}
+
+p.ex2 {
+padding: 40px;
+}
+
+h2.ex3 {
+padding: 40px;
+}
+
+p.ex3 {
+padding: 80px;
+}
+
+h2.ex4 {
+padding: 40px;
+}
+
+p.ex4 {
+padding: 80px;
+}
+
+h2.ex5 {
+padding: 40px;
+}
+
+p.ex5 {
+padding: 80px;
+}
+
+
+
+
