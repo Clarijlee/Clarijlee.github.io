@@ -1,0 +1,113 @@
+#motion-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#transition-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.transitionExample{
+  padding: 1rem;
+  height: 4rem;
+  background-color: blue;
+  flex-grow: 1;
+  transition: background-color 1000ms, color 500ms;
+  cursor: pointer;
+}
+
+#transition-example-1:hover{
+  background-color: yellow;
+  color: rgb(100, 117, 132);
+  transition: background-color 1000ms, color 1000ms;
+}
+
+#transition-example-1:active{
+  background-color: rgb(112, 246, 112);
+}
+
+#transition-example-2:hover{
+  background-color: palevioletred;
+  color: rgb(63, 151, 227);
+  transition: background-color 1000ms, color 1000ms;
+}
+
+#transition-example-2:active{
+  background-color: rgb(137, 17, 17);
+}
+
+#animation-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.animationExample{
+  height: 8rem;
+  background-color: blue;
+  background: linear-gradient(red, blue);
+  background-size: 200% 200%;
+  flex-grow: 1;
+  animation: cycleColour 1s infinite;
+}
+
+@keyframes cycleColour {
+  0% {
+    background-color: blue;
+    height: 1rem;
+    background-position: 100%;
+    width: 1rem;
+  }
+  20% {
+    background-color: greenyellow;
+    height: 8rem;
+  }
+  40% {
+    background-color: greenyellow;
+    transform: scale(2);
+  }
+  75% {
+    background-color: plum;
+    transform: rotate(90deg);
+  }
+  100% {
+  background-color: crimson;
+  height: 12rem;
+  }
+}
+
+@keyframes newAnimation {
+  
+}
+
+
+#animation-example-1{
+  animation: cycleColour 5s infinite ease-in;
+}
+
+#animation-example-2{
+  animation: cycleColour 5s infinite ease-out;
+}
+
+#animation-example-3{
+  animation: cycleColour 5s infinite ease-in-out;
+}
+
+#animation-example-4{
+  animation: cycleColour 5s infinite linear;
+}
+
+#animation-example-5{
+  animation: cycleColour 5s infinite ease-in reverse;
+}
+
+#animation-example-6{
+  animation: cycleColour 5s infinite ease-in alternate;
+} 
+
+
+

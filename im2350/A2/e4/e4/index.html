@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<!-- YOU NEED TO INCLUDE THE FOLLOWING HTML SOMEWHERE IN YOUR DESIGN -->
+
+<!-- 
+<p class="attribution">
+  "<a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/719005078">Art Time, Handheld Windmill / Fan</a>" by 
+  <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/berrybunchfamily">theBerry Bunch</a> is licensed under 
+  <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+  </a>. 
+</p>  
+-->
+
+<!--
+My chosen context is a craft tutorial. I felt that the most useful function for that would be having the option to adjust the speed of the video. This allows viewers to skim through the contents video briefly or slow it down so that they can follow it at their own pace. 
+I wanted to the speed button to turn into a drop down menu when clicked. This would result in an organised overview for users to decide on the speed they need. 
+It also takes up less space on the screen and visually appears less clustured compared to if all the speeds were placed horizontally along the video buttons bar. This awful design example can be seen on my failed attempt to turn my speed button into a drop down menu.
+The speed can only be change when another playbackrate speed button has been clicked. Otherise, it would have remained the same speed throughout the video.
+  
+The icon that I used for the button was the default provided. It seemed most appropriate because it is a commonly used icon and therefore recognisable to the masses.
+I left the background to be plain white, so that the colour would not be distracting to the video.
+  
+Unfortunately, I was unable to figure out how to successfully code the feature I desired. My attempt stopped at iunserting the icon and inputing different speeds. The speeds however when clicked do not toggle to what was set for some reason. 
+During my previous attempt, I had managed to make the speed icon make the video double the speed when clicked. However, it could not revert back to normal or other speeds.
+I tried to incorporate what I learnt during Evercise 2 with the recipe filters to hopefully connect the different speeds to the playbackspeed button. However, it did not translate well to become what I had intended.
+The codes I used as reference for this assignment includes some from the previous class exercises leading up to Assignment 2, MDD and W3Schools.
+
+Here are the links to the pages I referred to : 
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/playbackRate
+https://www.w3schools.com/howto/howto_css_dropdown.asp
+http://127.0.0.1:5501/index.html
+
+
+
+-->
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE ME</title>
+    <!-- please add a favicon -->
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <!-- this element holds all of the media player -->
+    <div class="video-player-wrapper">
+      <!-- this element holds the video element and the overlay -->
+      <div class="video-element-wrapper">
+
+        <video id="videoElement" controls>
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+        </video>
+
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton"></button>
+
+        <button class="video-control-button" id="muteButton"></button>
+
+        <div class="dropdown">
+
+        <button class="video-control-button" id="playbackRateButton"></button>
+
+        <script>
+
+          var player = videojs('my-video');
+  
+          function setSpeed() {
+             demoVideo.playbackRate = 0.5;
+          }
+
+          function playbackRate(a) {
+            document.getElementById('playbackRate').innerHTML = a;
+          }
+    
+        </script>
+    
+        <button onclick="playbackRate(0.5)">0.5</button>
+    
+        <script>
+    
+          function playbackRate(b) {
+            document.getElementById('playbackRate').innerHTML = b;
+          }
+    
+        </script>
+    
+        <button onclick="playbackRate(1.0)">1.0</button>
+    
+        <script>
+    
+          function playbackRate(c) {
+            document.getElementById('playbackRate').innerHTML = c;
+          }
+    
+        </script>
+    
+        <button onclick="playbackRate(1.5)">1.5</button>
+    
+        <script>
+    
+          function playbackRate(d) {
+            document.getElementById('playbackRate').innerHTML = d;
+          }
+    
+        </script>
+    
+        <button onclick="playbackRate(2.0)">2.0</button>    
+
+        </div>
+
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+
+      </div>
+
+    </div>
+
+    <p class="attribution">
+      "<a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/719005078">Art Time, Handheld Windmill / Fan</a>" by 
+      <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/berrybunchfamily">theBerry Bunch</a> is licensed under 
+      <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+      </a>.
+    </p>
+
+  </body>
+
+</html>

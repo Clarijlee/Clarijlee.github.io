@@ -1,0 +1,174 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#bab496;
+  --col-02:#000000;
+  --border: 1px 
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-02);
+  padding: 2vw;
+}
+
+/* Fonts */
+h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #084f27;
+  color: rgb(245, 245, 245);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  display: flexbox;
+  border-radius: 12px;
+  font-size: 42px;
+}
+
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 32px;
+}
+
+h3{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 19px;
+}
+
+p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #000000;
+  font-size: 17px;
+}
+
+div{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+  color: #084f27; 
+}
+
+img{
+  padding-top: 2rem;
+
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  border-radius: 27px;
+  padding-top: 2rem ;
+  padding-bottom: 2rem ;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.FilterSection{
+  padding:1.2rem;
+  font-size: 1cm;
+}
+
+.FilterBox{
+
+}
+
+.FilterButton{
+  background-color: #084f27; 
+  border: none;
+  color: rgb(230, 232, 210);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: flexbox;
+  font-size: 17px;
+  border-radius: 25px;
+}
+/* 
+  this class will be applied to the last filter button clicked - remember because it's below .FilterButton it will overwrite
+  any duplicate properties
+*/
+.SelectedFilter{
+  background-color: rgb(61, 160, 69);
+  
+}
+
+.RecipeLink{
+
+}
+
+.RecipeName{
+
+}
+
+.Author{
+
+}
+
+.RecipeImageContainer{
+
+}
+
+.RecipeImg{
+
+}
+
+.Attribution{
+
+}
+
+.Publisher{
+
+}
+
+.Cuisine{
+
+}
+
+.TimeToCook{
+
+}
+
+.SkillLevel{
+
+}
+
+.Course{
+
+}
+
+.Servings{
+
+}
+
+.Dietary{
+
+}
+
+.DatePublished{
+
+}
+
+.DateUpdated{
+
+}
+
+.SpecialEquipment{
+
+}
+
