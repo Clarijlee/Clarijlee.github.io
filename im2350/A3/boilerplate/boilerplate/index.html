@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+        <title>Butterfly Heaven</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <!--I have chosen my context to be an interactive experience for the audience in a forest setting that will lead to a butterfly heaven. This was heavily inspired by the The Goonies Website home page. What I discovered was this zoom in effect created by parallax scrolling. I too wanted to mimic something similar to allow my audience to feel like they are entering a forest and eventually being surrounded by butterflies.
+
+        I sourced licensed images using my adobe account that I felt best suited the aesthetic I was looking for. 
+
+        I was meant to be a straight forward experience with the start of my webpage being the forest. In order to guide my user to know which action to use, I provided instructions at the bottom of the header saying 'Scroll to discover'. From there, the background image should have zoom in slightly before switching to another forest image to provide a sense of travel for the user. Butterflies will begin to pop appear during the scroll down forest 'walk' and finally stop at a mossy ground where all the butterflies gather. That is the entire experience.
+
+        Unfortunately, I was far from successful in making this happen. I barely had an understanding on how Javascript works and was unable to get my code to function the way I would have preferred. The various resources from w3schools and Mdn was not enough to help me find references for the complicated code that i needed to do. I did try to at least achieve a sort of scroll effect as it was my chosen effect for this assignment. I referenced something similar I have done in my previous works to create a scroll effect and just made a simple scroll for the webpage to go horizontal and vertical. Another aspect that I was somewhat successful in was overlapping my butterfly image over my background forest image. My original intention was this make it come to life by animating the butterflies so that their wings and bodies can move throughout the image. This is to give off a first person point of view when first coming in contact with the butterflies.
+
+        I can see the potential for the intended parallax scrolling to create a zoom effect to have a more engaging and effective storytelling experience. It appears less boring and static since it gives off the impression that there is movement. I strongly believed that this type of webpage could be further developed for the use of entertainment or education.
+
+        Had I had more time to further refined this project, I feel like I could have make it appear neater and organised contrary to its current state. I took a look at The Goonies webpage code using the 'Inspect' function on Google to see how complicated is the code and if I would be able to do the same with my current knowledge and experience. I am not confident that I could, however I am satisfied that I was at least able to depict my context and chosen action with my choices or image and scroll effect.-->
+        
+        <div class="parallax"></div>
+
+        <nav>
+            <a href="#section1"></a>
+            <a href="#section2"></a>
+            <a href="#section3"></a>
+          </nav>
+          <div class="scroll-container">
+          
+          <div class="scroll-page" id="section1"></div>
+            <div id="title-container">
+                <h1 id="title">Butterfly Heaven</h1>
+                <p id="scroll-text">Scroll to discover</p>
+              </div>
+          
+        
+          <div class="scroll-page" id="section2"></div>
+            <div class="background-container">
+                <img src="/img/Forest4.jpeg" class="background-image" alt="Background Image">
+                <img src="/img/Butterfly1.png" class="overlay-image" alt="Overlay Image">
+              </div>
+          
+
+          <div class="scroll-page" id="section3"></div>
+            <div class="background-container">
+                <img src="/img/Forestground.jpeg" class="background-image" alt="Background Image">
+                <img src="/img/Butterfly2.png" class="overlay-image" alt="Overlay Image">
+              </div>
+        
+
+        </div>
+
+        <div class="parallax"></div>
+
+        
+    </body>
+
+</html>
